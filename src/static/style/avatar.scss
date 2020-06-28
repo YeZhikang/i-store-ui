@@ -1,0 +1,28 @@
+.ye-avatar{
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+
+  &--small{
+    width: 30px;
+    height: 30px;
+  }
+
+  &--normal{
+    width: 36px;
+    height: 36px;
+  }
+
+  &--large{
+    width: 48px;
+    height: 48px;
+  }
+
+
+  &--round{
+    border-radius: 50%;
+  }
+}

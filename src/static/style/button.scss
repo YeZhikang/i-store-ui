@@ -1,0 +1,100 @@
+.ye-button{
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+  border: 1px solid $default-color;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: 500;
+  transition: 0.1s;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  &:active{
+    background-color: $primary-color;
+    color: white;
+  }
+  &:focus{
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &--primary{
+    color: $primary-color;
+    background-color: $primary-back-color;
+    border: none;
+    &:active{
+      background-color: $primary-color;
+      color: white;
+    }
+    &:focus{
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+  &--warning{
+    color: $warning-color;
+    background-color: $warning-back-color;
+    border: none;
+    &:active{
+      background-color: $warning-color;
+      color: white;
+    }
+    &:focus{
+      background-color: $warning-color;
+      color: white;
+    }
+  }
+
+  &--error{
+    color: $error-color;
+    border: none;
+    background-color: $error-back-color;
+    &:active{
+      background-color: $error-color;
+      color: white;
+    }
+    &:focus{
+      background-color: $error-color;
+      color: white;
+    }
+  }
+
+  &--block{
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  &--small{
+    font-size: 1.1rem;
+    padding: 6px 10px;
+  }
+
+  &--normal{
+    font-size: 1.2rem;
+    padding: 8px 14px;
+  }
+
+  &--large{
+    font-size: 1.3rem;;
+    padding: 10px 17px;
+  }
+
+  &--text{
+    background-color: transparent;
+    &:active{
+      background-color: transparent;
+      color: #e6a23c;
+    }
+    &:focus{
+      background-color: transparent;
+      color: #e6a23c;
+    }
+  }
+}
+
+

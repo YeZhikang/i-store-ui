@@ -1,0 +1,23 @@
+@import "variables";
+@import "button";
+@import "input";
+@import "avatar";
+
+html{
+  height: 100%;
+  font-size: 12px;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+}
+
+body{
+  min-height: 100%;
+  height: 1em;
+}
+
+#root{
+  min-height: 100%;
+}
+
+h1,h2,h3,h4,h5,p{
+  margin: 0;
+}

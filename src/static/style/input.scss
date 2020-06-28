@@ -1,0 +1,64 @@
+.ye-input{
+  display: inline-flex;
+  border: 1px solid $default-color;
+  width: 180px;
+  transition: 0.1s;
+  box-sizing: border-box;
+  &--round{
+    border-radius: 6px;
+    .ye-input__container{
+      border-radius: 6px;
+    }
+  }
+
+  .ye-input__container{
+    flex-grow: 1;
+    font-size: 1.2rem;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 1rem .5rem;
+  }
+  .ye-input__extra{
+    padding: 1rem 0.1rem 1rem .6rem;
+    > *{
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &:hover{
+    border-color: $primary-back-color;
+  }
+
+  &--active{
+    border-color: $primary-color !important;
+  }
+
+  &--block{
+    border-radius: 20px;
+    width: 100%;
+    .ye-input__container{
+      padding-left: 0.2rem;
+      border-radius: 20px;
+    }
+
+    .ye-input__extra{
+      padding: 0 1rem 0 1.4rem;
+    }
+
+    .ye-input__button{
+      appearance: none;
+      outline: none;
+      position: relative;
+      left: 1px;
+      border: none;
+      color: white;
+      border-radius: 20px;
+      padding: 0 1.5rem;
+      background-image: linear-gradient(to right, $warning-color, $primary-color, $primary-color);
+    }
+  }
+}
