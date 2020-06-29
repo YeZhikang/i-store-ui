@@ -1,13 +1,14 @@
 import React from "react";
 import BasicIndex from "../view/basic";
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import {BrowserRouter, Switch, Route,Redirect} from 'react-router-dom'
 
 
 export default () => {
     return(
         <BrowserRouter>
             <Switch>
-                <Route exact path={'/'}>
+                <Redirect exact from={'/'} to={'/index'}/>
+                <Route path={'/index'}>
                     <BasicIndex/>
                 </Route>
             </Switch>

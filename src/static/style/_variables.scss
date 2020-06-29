@@ -12,3 +12,7 @@ $default-back-color: rgba(220, 223, 230, 0.2);
 
 $low-color: #7cd0ee;
 $high-color: #ee524d;
+
+@mixin normal-space{
+  padding: 0.5rem 1.1rem;
+}

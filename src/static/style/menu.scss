@@ -1,7 +1,46 @@
-.ye-menu-bar{
+@import "variables";
 
+.ye-menu-bar {
+  width: 100%;
+  overflow-x: scroll;
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+
+  &::-webkit-scrollbar {
+    display: none
+  }
+
+  .ye-menu-bar__menu-item {
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &--active {
+      font-size: 16px;
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
 }
 
-.ye-menu-bar__menu-item{
-
+.menu-more{
+  box-shadow: -7px 0px 6px -7px darkgrey;
+  height: 2rem;
+  flex-grow: 1;
+  margin-left: .3rem;
 }
+

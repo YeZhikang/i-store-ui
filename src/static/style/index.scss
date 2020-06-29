@@ -2,6 +2,7 @@
 @import "button";
 @import "input";
 @import "avatar";
+@import "menu";
 
 html{
   height: 100%;
@@ -20,4 +21,13 @@ body{
 
 h1,h2,h3,h4,h5,p{
   margin: 0;
+}
+
+.fa{
+  display: flex;
+  align-items: center;
+}
+
+.normal-space{
+  padding: 0.5rem 1.1rem;
 }
